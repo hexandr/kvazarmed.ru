@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+    <link rel="shortcut icon" href="images/header-logo.ico" type="image/x-icon" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/layout.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.scrolldeck.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollorama.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var deck = new $.scrolldeck({
+                buttons: '.header-menu-item a',
+                slides: '.slide'
+            });
+
+            for (var i = 2; i < $('.specialsBlock-table tr').length; i += 2) {
+                $($('.specialsBlock-table tr')[i]).addClass('colored');
+            }
+        });
+    </script>
+    <title>ООО "Фирма Квазар"</title>
+</head>
+<body>
+    <div id="all">
+        <div class="header-wrap">
+            <div class="header clearfix">
+                <ul class="header-menu">
+                    <li class="header-menu-item"><a href="#begin">Начало</a></li>
+                    <li class="header-menu-item"><a href="#about">О нас</a></li>
+                    <!--li class="header-menu-item"><a href="#specials">Спецпредложения</a></li-->
+                    <li class="header-menu-item"><a href="#contacts">Контакты</a></li>
+                </ul>
+
+                <a href="#" class="header-logo"></a>
+            </div>
+        </div>
+
+        <div class="content enterBlock slide" id="begin">
+            <div class="enterBlock-logo"></div>
+        </div>
+
+        <div class="allBlue slide clearfix" id="about">
+            <div class="content aboutBlock">
+                <h1>О нас</h1>
+                <div class="aboutBlock-scheme"></div>
+
+                <div class="aboutBlock-text left">
+                    <p>Мы являемся одним из ведущих поставщиков средств дезинфекции, 
+                        расходных материалов и оборудования на территории 
+                        Уральского Федерального округа. </p>
+                    <p>Вся представленная продукция отвечает международным 
+                        требованиям безопасности и качества. </p>
+                    <p>Обеспечивается консультативная и методическая поддержка клиентов, 
+                        поставки на всей территории УрФО.</p>
+                </div>
+
+                <div class="aboutBlock-text right">
+                    <p>Наши товары соответствуют критерию "цена-качество". </p>
+                    <p>Высококвалифицированная и творческая 
+                        команда сотрудников готова в каждом конкретном случае обсуждать 
+                        условия договора и сделает максимально возможное, чтобы в вашем 
+                        учреждении было всё необходимое для обеспечения лечебного процесса.</p>
+                    <p>Мы всегда рады работе с вами!</p>
+                </div>
+            </div>
+        </div>
+        
+        <!--div class="content specialsBlock slide" id="specials">
+            <h1>Спецпредложения</h1>
+            
+            <table class="specialsBlock-table">
+                <tr>
+                    <th>Наименование</th>
+                    <th>Проиводитель</th>
+                    <th>Цена</th>
+                </tr>
+                <tr>
+                    <td>Салфетки спиртовые «SUYUN» для инъекций одноразовые в групповой 
+                        упаковке (банке-дозаторе Quick Pad) размер 4,5х4,5 см №150</td>
+                    <td>Россия</td>
+                    <td>125 руб.</td>
+                </tr>
+                <tr>
+                    <td>Ткань упаковочная (мешковина), ш.110 см., 100 м/рул</td>
+                    <td>Китай</td>
+                    <td>29,50 руб./м</td>
+                </tr>
+                <tr>
+                    <td>Зеркало влагалищное полимерное одноразового применения стерильные
+                        по Куско. Размер S</td>
+                    <td>Россия , 
+                        «ДиаКлон»</td>
+                    <td>16,50 руб</td>
+                </tr>
+            </table>
+        </div-->
+
+        <div class="content contacts slide" id="contacts">
+            <h1>Контакты</h1>
+            <div class="clearfix">
+                <div class="left">
+                    <h3>ООО «Фирма Квазар»</h3>
+                    <p class="contacts-adress">620086, г. Екатеринбург, ул. Радищева 60</p>
+                    <p class="contacts-phone">(343) 379-65-64</p>
+                    <p class="contacts-email">kvazarmed@gmail.com</p>
+                    <p class="contacts-time">9:00 до 18:00, в будние дни</p>
+                </div>
+                <div class="right">
+					<a id="firmsonmap_biglink" href="http://2gis.ru/ekaterinburg/firm/1267165676216295/center/60.57335615158081,56.82637705614132/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Екатеринбурга</a>
+					<div id="firmsonmap_biglink_route">
+						<a href="http://2gis.ru/ekaterinburg/center/60.571909,56.826452/zoom/16/routeTab/rsType/bus/to/60.571909,56.826452?Фирма Квазар, ООО?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти проезд до Фирма Квазар, ООО</a>
+					</div>
+					<script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+					<script charset="utf-8">new DGWidgetLoader({"width":640,"height":600,"borderColor":"#a3a3a3","pos":{"lat":56.82637705614132,"lon":60.57335615158081,"zoom":16},"opt":{"city":"ekaterinburg"},"org":[{"id":"1267165676216295"}]});</script>
+					<noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,181 @@
+﻿html, body {
+	margin: 0;
+	padding: 0;
+    min-height: 600px;
+	min-width: 1024px;
+	height: 100%;
+	width: 100%;
+	font-family: Arial;
+	font-size: 15px;
+    color: #2279A6;
+}
+a {
+    text-decoration: none;
+}
+
+#all {
+    position: relative;
+    height: 100%;
+}
+    .allBlue {
+        min-height: 100%;
+        width: 100%;
+        padding-bottom: 30px;
+        background: #2279A6;
+        color: #fff;
+    }
+    .content {
+        width: 1024px;
+        height: 100%;
+        left: 50%;
+        margin: 0 -512px;
+        padding: 5px 0;
+    }
+        .allBlue .content {
+            margin: 0 -512px;
+            position: relative;
+            left: 50%;
+        }
+        h1 {
+            margin-bottom: 60px;
+            padding-top: 70px;
+            font-size: 75px;
+            display: inline-block;
+            border-bottom: 20px #2279A6 solid;
+        }
+        .allBlue h1 {
+            color: #fff;
+            border-bottom: 20px #fff solid;
+        }
+/* header */
+.header-wrap {
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+.header {
+    width: 1024px;
+    height: 35px;
+    padding: 15px 0 10px 15px;
+    margin: 0 auto;
+}
+    .header-logo {
+        width: 26px;
+        height: 25px;
+        display: block;
+        background: url('../images/header-logo.png') 0 0 no-repeat;
+    }
+    .header-menu {
+        float: right;
+        list-style: none;
+        border-bottom: 1px #D7D7D7 solid;
+    }
+        .header-menu-item {
+            display: inline-block;
+            margin: 5px 20px 0;
+            padding: 0 0 10px;
+            font-size: 14px;
+            position: relative;
+        }
+            .header-menu-item a {
+                color: #0F5672;
+                display: block;
+            }
+            .header .current:after {
+                content: ' ';
+                width: 100%;
+                height: 3px;
+                padding: 0 20px;
+                background: #1B75BB;
+                position: absolute;
+                bottom: -2px;
+                left: -20px;
+            }
+/* enterBlock */
+.enterBlock {
+    position: relative;
+}
+    .enterBlock-logo {
+        width: 778px;
+        height: 213px;
+        position: relative;
+        top: 50%;
+        margin: -107px auto;
+        background: url('../images/logo.png') 0 0 no-repeat;
+    }
+
+/* aboutBlock */
+.aboutBlock {
+    background: #2279A6;
+}
+    .aboutBlock-scheme {
+        width: 925px;
+        height: 396px;
+        margin: 0 auto 30px;
+        background: url('../images/about.png') 0 0 no-repeat;
+    }
+    .aboutBlock-text {
+        width: 450px;
+    }
+    .aboutBlock p {
+        padding-bottom: 15px;
+    }
+
+/* specialsBlock */
+.specialsBlock {
+    
+}
+    .specialsBlock-table {
+        width: 100%;
+        text-align: left;
+    }
+        .specialsBlock-table th {
+            text-align: left;
+            padding: 0px 20px 10px 10px;
+            font-size: 18px;
+        }
+        .specialsBlock-table td {
+            min-width: 100px;
+            padding: 15px 20px 15px 10px;
+            border-top: 1px #1B75BB solid;
+            font-size: 16px;
+            vertical-align: top;
+        }
+        .colored {
+            background: rgba(34, 121, 166,0.1);
+        }
+
+/* contacts */
+.contacts {
+    font-size: 18px;
+}
+    .contacts h3 {
+        margin-bottom: 30px;
+        padding-left: 20px;
+    }
+    .contacts-map {
+        float: right;
+    }
+    .contacts-adress {
+        padding-left: 25px;
+        background: url('../images/adress.png') 0 4px no-repeat;
+        margin-bottom: 15px;
+    }
+    .contacts-email {
+        padding-left: 25px;
+        background: url('../images/email.png') 0 7px no-repeat;
+        margin-bottom: 15px;
+    }
+    .contacts-phone {
+        padding-left: 25px;
+        background: url('../images/phone.png') 0 4px no-repeat;
+        margin-bottom: 15px;
+    }
+    .contacts-time {
+        padding-left: 25px;
+        background: url('../images/time.png') 0 4px no-repeat;
+        margin-bottom: 15px;
+    }
